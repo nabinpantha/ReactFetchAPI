@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     fetch("https://www.anapioficeandfire.com/api/books")
       .then((response) => response.json())
-      .then((data) => setBook(data));
+      .then((data) => setBook(data.results));
   }, []);
 
   //  console.log(books);
